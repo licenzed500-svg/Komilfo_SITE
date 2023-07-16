@@ -1,0 +1,27 @@
+         $(document).ready(function () {
+          
+           $('.openmodals').click(function () {
+           
+           if($(this).hasClass("active")){
+            $(this).removeClass("active");
+           $("#medal").fadeOut();
+           
+           }else{
+           
+            $(this).addClass("active");
+           $("#medal").fadeIn();
+           
+           }
+           
+           return false;
+           });
+           
+           $('.cl-btn-7').click(function () {
+           
+            $(".openmodals").removeClass("active");
+           $("#medal").fadeOut();
+           
+           return false;
+           });
+          
+         });
